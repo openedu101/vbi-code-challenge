@@ -63,7 +63,9 @@ Sau khi nộp bài, Ban giám khảo sẽ đánh giá bài dựa trên thang đi
    - Code có kiểm tra đầu vào hợp lý không?  
    - Có xử lý lỗi một cách hợp lý không?
 
-**Lưu ý:** Nếu hai bài có cùng số điểm, bài nộp sớm hơn sẽ được ưu tiên.
+**Lưu ý:** Nếu hai bài có cùng số điểm, bài nộp sớm hơn sẽ được ưu tiên. 
+
+Quy tắc chấm điểm sẽ thay đổi theo từng tuần, hãy chú ý quy tắc chấm điểm trong từng đề bài để có một kết quả tốt hơn.
 
 ## Hướng dẫn nộp bài qua GitHub Pull Request (PR)
 
@@ -134,49 +136,31 @@ Sau khi tạo PR, đợi ban giám khảo kiểm tra và đánh giá bài làm c
 Đang cập nhật đề bài...
 
 ### Tuần 2 (02/09 - 08/09)
-- **Giải 1**: Sạc dự phòng (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (100k)
-- **Giải may mắn**: Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
 
 ### Tuần 3 (09/09 - 15/09)
-- **Giải 1**: Bàn phím cơ (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (100k)
-- **Giải may mắn**: Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
 
 ### Tuần 4 (16/09 - 22/09)
-- **Giải 1**: Balo laptop (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (100k)
-- **Giải may mắn**: Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
 
 ### Tuần 5 (23/09 - 29/09)
-- **Giải 1**: Chuột gaming (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (100k)
-- **Giải may mắn**: Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
 
 ### Tuần 6 (30/09 - 06/10)
-- **Giải 1**: Tai nghe Bluetooth (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (100k)
-- **Giải may mắn**: Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
 
 ### Tuần 7 (07/10 - 13/10) - Tuần đặc biệt
-- **Giải 1**: Bàn phím cơ (~500k)
-- **Giải 2**: Voucher Got it (200k)
-- **Giải 3**: Voucher Got it (150k)
-- **Giải may mắn**: 3 giải Voucher Got it (100k)
+
 
 Đang cập nhật đề bài...
