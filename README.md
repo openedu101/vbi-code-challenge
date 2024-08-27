@@ -40,7 +40,7 @@ Tuần hiện tại: [Tuần 1](#tuần-1-2608---0109)
 
 ## Quy tắc chấm điểm
 
-Sau khi nộp bài, Ban giám khảo sẽ đánh giá bài dựa trên thang điểm 100 với các tiêu chí sau:
+Sau khi nộp bài, Ban giám khảo sẽ đánh giá bài dựa trên thang điểm 100 với các tiêu chí **ví dụ** sau:
 
 1. **Tính chính xác (40%)**  
    Code có giải quyết được đề bài hay không?
@@ -134,7 +134,7 @@ Sau khi tạo PR, đợi ban giám khảo kiểm tra và đánh giá bài làm c
 - **Giải 3**: Voucher Got it (100k)
 - **Giải may mắn**: Voucher Got it (100k)
 
-Đang cập nhật đề bài...
+Đề bài xem [tại đây](https://github.com/openedu101/vbi-code-challenge/tree/week-1).
 
 ### Tuần 2 (02/09 - 08/09)
 
