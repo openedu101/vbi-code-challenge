@@ -10,7 +10,7 @@
 
 ## Đề bài
 
-Có 3 đề bài cho tuần hôm nay!!! Bạn có thể chọn 1 trong 3.
+Có 3 đề bài cho tuần này!!! Bạn có thể chọn 1 trong 3.
 
 ### 1. Ví Tự Động (Auto Wallet)
 Xây dựng hợp đồng thông minh cho phép người dùng gửi Ether vào ví, và hợp đồng sẽ tự động chuyển một phần nhỏ số Ether đó đến địa chỉ khác.
