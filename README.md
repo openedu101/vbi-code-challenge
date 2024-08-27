@@ -110,6 +110,7 @@ Mô tả ngắn về bài thi của bạn. Bao gồm bạn hãy tự đánh giá
 Phần tự đánh giá là tuỳ chọn. Tuy nhiên nếu có thì còn hơn không nha!
 
 - Link Github repository tới bài thi của bạn (hãy nhớ để trạng thái public)
+- Các link resources liên quan đến bài thi nếu có (ví dụ deployment link).
 ```
 
 5. **Tạo Pull Request (PR):**
