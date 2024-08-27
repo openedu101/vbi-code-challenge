@@ -24,7 +24,7 @@ Tuần hiện tại: [Tuần 1](#tuần-1-2608---0109)
 
 - Mỗi tuần, một bài tập mới sẽ được đưa ra vào thứ 3.
 - Người tham gia sẽ nộp bài qua GitHub kèm theo một post giải thích ngắn gọn về giải pháp của mình.
-- Đăng bài giải của bạn lên **[VBI Vietnam Dev & Tech Forum](https://www.facebook.com/groups/529546081751025)** kèm theo hashtag `#VBI` `#CodingChallenge` `#Web3Community` `#Web3Developer`.
+- Đăng bài giải của bạn lên **[VBI Vietnam Dev & Tech Forum](https://www.facebook.com/groups/529546081751025)**. Viết 1 đoạn mô tả ngắn về phương pháp giả, đính kèm link GitHub bài làm của minh + 1 số may mắn từ 00-99 + chuỗi hashtag: `#VBI #CodingChallenge # Web3Community #Web3Developer`.
 
 ## Quy trình tham gia
 
@@ -120,7 +120,7 @@ Nhấn nút "Compare & Pull Request" và viết mô tả ngắn gọn về bài 
 
 6. **Đăng bài:**
 
-Đăng bài giải của bạn lên **[VBI Vietnam Dev & Tech Forum](https://www.facebook.com/groups/529546081751025)** kèm theo hashtag #VBI #CodingChallenge #Web3Community #Web3Developer.
+Đăng bài giải của bạn lên **[VBI Vietnam Dev & Tech Forum](https://www.facebook.com/groups/529546081751025)**. Viết 1 đoạn mô tả ngắn về phương pháp giả, đính kèm link GitHub bài làm của minh + 1 số may mắn từ 00-99 + chuỗi hashtag: `#VBI #CodingChallenge # Web3Community #Web3Developer`.
 
 7. **Hoàn thành:**
 
