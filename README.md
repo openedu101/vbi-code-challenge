@@ -129,10 +129,10 @@ Sau khi tạo PR, đợi ban giám khảo kiểm tra và đánh giá bài làm c
 ## Đề bài và giải thưởng
 
 ### Tuần 1 (26/08 - 01/09)
-- **Giải 1**: Chuột gaming có dây MSI Clutch GM08 
-- **Giải 2**: Voucher Got it 
-- **Giải 3**: Voucher Got it 
-- **Giải may mắn**: Voucher Got it
+- **Giải 1**: Chuột Gaming từ nhà MSI
+- **Giải 2**: Voucher Got it (200k)
+- **Giải 3**: Voucher Got it (100k)
+- **Giải may mắn**: Voucher Got it (100k)
 
 Đề bài xem [tại đây](https://github.com/openedu101/vbi-code-challenge/tree/week-1).
 
