@@ -3,7 +3,7 @@
 ## Giải thưởng
 
 ### Tuần 1 (26/08 - 01/09)
-- **Giải 1**: Chuột gaming có dây MSI Clutch GM08 (~400k)
+- **Giải 1**: Chuột Gaming từ nhà MSI
 - **Giải 2**: Voucher Got it (200k)
 - **Giải 3**: Voucher Got it (100k)
 - **Giải may mắn**: Voucher Got it (100k)
