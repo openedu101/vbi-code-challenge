@@ -14,6 +14,8 @@ Mô tả ngắn về bài thi của bạn.
 
 ## Simple Time Lock
 
-- Hợp đồng thông minh được khởi tạo với số lượng ETH và thời gian muốn mở khoá
+- Hợp đồng thông minh được khởi tạo không tham số
 
-- Khi thời gian kết thúc, người dùng có thể rút số Ether đã khóa.
+- User gọi hàm **_lock_** với tham số thời gian unlock cùng với số ETH muốn lock
+
+- Kiểm tra các ràng buộc trước khi unlock
