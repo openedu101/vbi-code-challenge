@@ -19,3 +19,5 @@ Mô tả ngắn về bài thi của bạn.
 - User gọi hàm **_lock_** với tham số thời gian unlock cùng với số ETH muốn lock
 
 - Kiểm tra các ràng buộc trước khi unlock
+
+## Contribution Counter
