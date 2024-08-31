@@ -6,7 +6,8 @@ import { getAddress, parseGwei } from "viem";
 describe("AutoWallet", function () {
   const FEE_PERCENT = 1000; // 10%
   async function deployAutoWalletFixture() {
-    const [owner, receiver, depositor] = await hre.viem.getWalletClients();
+    const [owner, receiver, depositor, otherAccount] =
+      await hre.viem.getWalletClients();
 
     const autoWallet = await hre.viem.deployContract("AutoWallet", [
       receiver.account.address,
@@ -19,6 +20,7 @@ describe("AutoWallet", function () {
       autoWallet,
       owner,
       receiver,
+      otherAccount,
       depositor,
       publicClient,
     };
@@ -70,7 +72,7 @@ describe("AutoWallet", function () {
 
   describe("Withdraw", function () {
     it("Should withdraw correctly", async function () {
-      const { autoWallet, owner, depositor, receiver, publicClient } =
+      const { autoWallet, owner, depositor, otherAccount, publicClient } =
         await loadFixture(deployAutoWalletFixture);
 
       const amount = parseGwei("1");
@@ -82,23 +84,45 @@ describe("AutoWallet", function () {
 
       const fee = (amount * BigInt(FEE_PERCENT)) / 10000n;
 
-      const amount_minus_fee = amount - fee;
-
-      const owner_balance_before = await publicClient.getBalance({
-        address: owner.account.address,
+      const other_account_balance_before = await publicClient.getBalance({
+        address: otherAccount.account.address,
       });
 
       const withdraw_amount = await autoWallet.read.getBalance();
 
-      await autoWallet.write.withdraw([withdraw_amount, owner.account.address]);
+      await autoWallet.write.withdraw([
+        withdraw_amount,
+        otherAccount.account.address,
+      ]);
 
-      expect(await autoWallet.read.getBalance()).to.equal(0);
+      expect(await autoWallet.read.getBalance()).to.equal(0n);
 
       expect(
         await publicClient.getBalance({
-          address: owner.account.address,
+          address: otherAccount.account.address,
         })
-      ).to.equal(owner_balance_before + amount_minus_fee);
+      ).to.equal(other_account_balance_before + fee);
+    });
+
+    it("should only allow owner to withdraw", async function () {
+      const { autoWallet, owner, depositor, otherAccount, publicClient } =
+        await loadFixture(deployAutoWalletFixture);
+      const amount = parseGwei("1");
+      await depositor.sendTransaction({
+        to: autoWallet.address,
+        value: amount,
+      });
+
+      const withdrawAmount = await autoWallet.read.getBalance();
+
+      await expect(
+        autoWallet.write.withdraw(
+          [withdrawAmount, otherAccount.account.address],
+          {
+            account: otherAccount.account,
+          }
+        )
+      ).to.be.rejectedWith("Only owner can call this function");
     });
   });
 });

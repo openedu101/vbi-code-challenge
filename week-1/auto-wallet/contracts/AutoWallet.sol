@@ -58,7 +58,10 @@ contract AutoWallet {
         feePercent = _feePercent;
     }
 
-    function withdraw(uint256 amount, address destination) public onlyOwner {
+    function withdraw(
+        uint256 amount,
+        address payable destination
+    ) public onlyOwner {
         require(
             amount <= address(this).balance,
             "Withdraw amount must be less than or equal to the contract balance"

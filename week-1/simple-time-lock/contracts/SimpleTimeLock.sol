@@ -15,6 +15,10 @@ contract SimpleTimeLock {
     constructor() {}
 
     function lock(uint256 _unlockTime) public payable {
+        require(
+            lockInfos[msg.sender].amount == 0,
+            "You have already locked Ether"
+        );
         require(msg.value > 0, "Ether amount must be greater than 0");
         require(
             _unlockTime > block.timestamp,
@@ -36,8 +40,8 @@ contract SimpleTimeLock {
             address(this).balance >= amount,
             "Insufficient contract balance"
         );
+        delete lockInfos[msg.sender];
         payable(msg.sender).transfer(amount);
         emit Unlocked(msg.sender, amount);
-        delete lockInfos[msg.sender];
     }
 }
