@@ -21,3 +21,13 @@ Mô tả ngắn về bài thi của bạn.
 - Kiểm tra các ràng buộc trước khi unlock
 
 ## Contribution Counter
+
+- Biến owner: Được khởi tạo với giá trị là địa chỉ của người triển khai hợp đồng (msg.sender).
+
+- Biến userToAmount: Một mapping lưu trữ số Ether mà mỗi người dùng đã đóng góp.
+
+- Biến totalContributor: Đếm số lượng người dùng đã đóng góp.
+
+- Sự kiện Contributed: Được phát ra khi một người dùng đóng góp Ether.
+
+- Sự kiện Withdrawn: Được phát ra khi chủ sở hữu hợp đồng rút Ether.
