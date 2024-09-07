@@ -1,5 +1,7 @@
 # Bài thi của Lương Đức Trọng
 
+Bài dự thi đề số 1 - Ví tự động
+
 - Tính chính xác
     đã có thể gửi như yêu cầu đề bài
 - Hiệu suất
