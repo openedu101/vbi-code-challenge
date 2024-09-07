@@ -6,7 +6,7 @@ Bài thi này bao gồm ba Sc: `AutoWallet`, `ContributionCounter`, và `SimpleT
 ## Tự đánh giá
 
 - **Tính chính xác**: 
-  - Các contract đã được kiểm tra kỹ lưỡng và hoạt động chính xác theo yêu cầu. Các lỗi được xử lý rõ ràng, đảm bảo rằng user không thể thực hiện các hành động không hợp lệ (verified contract).
+  - Các contract đã được kiểm tra kỹ lưỡng và hoạt động chính xác theo yêu cầu. Các lỗi được xử lý rõ ràng, đảm bảo rằng user không thể thực hiện các hành động không hợp lệ.
 
 - **Hiệu suất**: 
   - contract được tối ưu hóa để giảm thiểu chi phí gas. Các logic được build rõ ràng.
