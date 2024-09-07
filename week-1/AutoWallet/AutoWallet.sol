@@ -50,7 +50,7 @@ contract AutoWallet {
         emit Transferred(recipient, amountToTransfer);
     }
 
-    // === Admin Call Functions ===
+    // === Owner Call Functions ===
     function changeRecipient(address payable newRecipient) external onlyOwner {
         if (newRecipient == address(0)) revert InvalidRecipient(); 
         emit RecipientChanged(recipient, newRecipient);
