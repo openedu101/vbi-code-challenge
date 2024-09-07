@@ -2,8 +2,6 @@
 
 Contract `ContributionCounter` cho phép user contribute một số tiền nhất định và rút lại số tiền đó sau một khoảng thời gian khóa (giống DAO kết hợp Staking). Contract cũng cho phép owner cập nhật giới hạn contribute tối đa và thời gian khóa rút tiền.
 
-## Các thành phần chính
-
 ### 1. Các lỗi (Errors)
 - `InsufficientContribution`: Emit khi user cố gắng contribute số tiền nhỏ hơn hoặc bằng 0.
 - `AlreadyContributed`: Emit khi user đã contribute trước đó.

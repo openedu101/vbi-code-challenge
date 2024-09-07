@@ -1,13 +1,12 @@
 # Contract SimpleTimeLock
 
-## Giới thiệu:
-Contract `SimpleTimeLock` cho phép người dùng khóa Eth trong một khoảng thời gian xác định (Tương tự stake eth trên dex hay farming). Sau khi thời gian khóa kết thúc, người dùng có thể rút Eth đã khóa. Contract cũng cho phép người dùng hủy khóa và hoàn lại Eth nếu cần.
+Contract `SimpleTimeLock` cho phép user khóa Eth trong một khoảng thời gian xác định (Tương tự stake eth trên dex hay farming). Sau khi thời gian khóa kết thúc, user có thể rút Eth đã khóa. Contract cũng cho phép user hủy khóa và hoàn lại Eth nếu cần.
 
 ## Tính năng:
-- **Khóa Eth**: Người dùng có thể khóa Eth với một thời gian khóa cụ thể.
-- **Rút Eth**: Người dùng có thể rút Eth sau khi thời gian khóa đã hết.
-- **Hủy khóa**: Người dùng có thể hủy khóa và nhận lại toàn bộ Eth đã khóa.
-- **Kiểm tra khóa sắp hết hạn**: Người dùng có thể kiểm tra xem khóa nào sắp hết hạn trong vòng 1 ngày.
+- **Khóa Eth**: user có thể khóa Eth với một thời gian khóa cụ thể.
+- **Rút Eth**: user có thể rút Eth sau khi thời gian khóa đã hết.
+- **Hủy khóa**: user có thể hủy khóa và nhận lại toàn bộ Eth đã khóa.
+- **Kiểm tra khóa sắp hết hạn**: user có thể kiểm tra xem khóa nào sắp hết hạn trong vòng 1 ngày.
 
 ## Error handling:
 - `NotFutureUnlockTime`: Thời gian mở khóa không hợp lệ.
@@ -25,7 +24,7 @@ Contract `SimpleTimeLock` cho phép người dùng khóa Eth trong một khoản
   - `string name`: Tên của khóa ng dùng đặt.
   - `bool isCanceled`: Flag để check hay set xem khóa đã bị hủy hay chưa.
 
-- `mapping(address => Lock[]) public locks`: Theo dõi các khóa của người dùng.
+- `mapping(address => Lock[]) public locks`: Theo dõi các khóa của user.
 
 ## Các Event:
 - `EthLocked(address indexed user, uint256 amount, uint256 unlockTime, string name)`: Event được emit khi Eth được khóa.
@@ -37,7 +36,7 @@ Contract `SimpleTimeLock` cho phép người dùng khóa Eth trong một khoản
 - `lockEth(uint256 _lockDuration, string calldata _name)`: Khóa Eth với thời gian khóa và tên xác định.
 - `withdrawEth(uint256 _index, uint256 _amount)`: Rút Eth từ khóa đã chỉ định.
 - `cancelLock(uint256 _index)`: Hủy khóa và hoàn lại Eth.
-- `getUserLocks()`: Trả về danh sách các khóa của người dùng.
+- `getUserLocks()`: Trả về danh sách các khóa của user.
 - `checkExpiringLocks()`: Kiểm tra và emit event cho các khóa sắp hết hạn.
 
 ## Ví dụ sử dụng

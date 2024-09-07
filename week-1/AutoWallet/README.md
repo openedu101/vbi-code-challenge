@@ -1,6 +1,5 @@
 # AutoWallet Contract
 
-## Giới thiệu:
 SC `AutoWallet` cho phép người dùng gửi eth đến một address contract, sau đó sc tự động trừ đi một khoản phí được xác định trước (default là 10%). SC này được build để đơn giản hóa việc tranfer và quản lý phí cho các transaction.
 
 ## Feature:
