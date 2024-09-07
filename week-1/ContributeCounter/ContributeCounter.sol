@@ -21,6 +21,7 @@ contract ContributionCounter {
     // === Events ===
     event Contributed(address indexed sender, uint256 amount, uint256 totalAmount);
     event Withdrawn(address indexed contributor, uint256 amount);
+    event OwnerWithdrawn(address indexed owner, uint256 amount); // Event for owner withdrawal
     event MaxContributionUpdated(uint256 newMaxContribution);
     event WithdrawalLockTimeUpdated(uint256 newLockTime);
 
@@ -59,6 +60,13 @@ contract ContributionCounter {
         emit Withdrawn(msg.sender, amount); // emit event for withdrawal
     }
 
+    // === Owner Withdrawal Function ===
+    function ownerWithdraw(uint256 amount) external onlyOwner {
+        if (amount > address(this).balance) revert InsufficientBalance(); // ensure contract has enough balance
+        payable(owner).transfer(amount); // transfer specified amount to the owner
+        emit OwnerWithdrawn(owner, amount); // emit event for owner withdrawal
+    }
+
     function updateMaxContribution(uint256 newMaxContribution) external onlyOwner {
         maxContribution = newMaxContribution; // update maximum contribution limit
         emit MaxContributionUpdated(newMaxContribution); // emit event for max contribution update
@@ -78,5 +86,5 @@ contract ContributionCounter {
         return totalContributors; // return total number of unique contributors
     }
 
-    // tnx: https://sepolia.etherscan.io/address/0xf669885ad124e9a74182d7b995bdffc672d114e9
+    // tnx: https://sepolia.etherscan.io/address/0x243bf6acfe953aa3fe551b7684af0a47eedeafad
 }
